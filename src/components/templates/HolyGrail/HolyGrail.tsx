@@ -9,7 +9,6 @@ type HolyGrailProps = {
   children: React.ReactNode;
 };
 
-const logo = <Icon icon="logo"></Icon>;
 const leading1 = <Icon icon="dashboard"></Icon>;
 const leading2 = <Icon icon="products"></Icon>;
 const leading3 = <Icon icon="customers"></Icon>;
@@ -56,22 +55,18 @@ const HolyGrail = ({ children }: HolyGrailProps) => {
       <SideBar
         width="14rem"
         height="100vh"
-        header={logo}
         sticky={true}
         className="side-bar"
         toggled={layoutState.sidebarToggle}
         toggleAnimation="shrink"
         
       >
-        <ListItem leading={leading1}>판매 현황</ListItem>
-        <ListItem leading={leading2} border="none">
-          상품 관리 / 등록
+        <ListItem>서비스 소개</ListItem>
+        <ListItem border="none">
+          도서 추천 서비스
         </ListItem>
-        <ListItem leading={leading3} border="none">
-          고객 정보 관리
-        </ListItem>
-        <ListItem leading={leading4} border="none">
-          고객 문의 관리
+        <ListItem border="none">
+          알고리즘 소개
         </ListItem>
       </SideBar>
       <Main>

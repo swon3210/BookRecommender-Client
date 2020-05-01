@@ -18,7 +18,7 @@ const StyledDiv = styled.div`
 
 const ImgDiv = styled.div`
   width: 50%;
-  background-image: url(${require("assets/img/ward-login.jpg")});
+  background-image: url(${require("../../../assets/img/login.jpg")});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
